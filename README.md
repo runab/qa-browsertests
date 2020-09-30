@@ -6,14 +6,14 @@ To run the Selenium tests you will have to install Ruby (look at `.rvmrc` file f
 
 Update RubyGems and install the required RubyGems:
 
-    cd browsertests
-    gem update --system
-    gem install bundler
-    bundle install
+  *  cd browsertests
+  *  gem update --system
+  *  gem install bundler
+  *  bundle install
 
 You will need a file with credentials located at `/private/wmf/secret.yml`. For local testing, create a user named `Selenium_user` on your local wiki and record the password in this file as
 
-    mediawiki_password: password here
+    mediawiki_password: "password here"
 
 Run the tests with `bundle exec rake`, this should start Firefox.
 The test run creates an HTML report in `reports/` and an XML report (for Jenkins) in `reports/junit`.
